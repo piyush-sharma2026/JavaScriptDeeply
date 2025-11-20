@@ -60,7 +60,7 @@ function loginUserMessage(username) {
     }
     return `${username} just loggedin`
 }
-logiinUserMessage("Piyush"); // No output because it just returned not printed
+loginUserMessage("Piyush"); // No output because it just returned not printed
 console.log(loginUserMessage("Piyush"))// it wil print the "Piyush just loggedin"
 console.log(loginUserMessage()); // it will print "undefined just loggedin" because no parameter is passed
 
@@ -74,5 +74,53 @@ function loginUserMessage(username = "Akshay") { // setting default parameter
 console.log(loginUserMessage()); // it will print "Akshay just loggedin" because default parameter is set
 console.log(loginUserMessage("Piyush")); // it wil print the "Piyush just loggedin"
 
+
+/*************************************************** */
+
+//FUNCTION WITH OBJECT AND ARRAY IN JAVASCRIPT
+
+
+function calculateCartPrice(...num1) { //rest operator or spead operator
+    return num1;
+}
+
+console.log(calculateCartPrice(100, 200, 300, 400, 500)); // it will return array of all the numbers passed as arguments
+//NOTE:-- rest operator is used to pass multiple arguments as an array to a function
+
+
+//Another way to write function using rest operator
+
+function calculateCartPrice2(val1, val2, ...prices) { //rest operator or spead operator
+    return prices;
+}
+console.log(calculateCartPrice2(100, 200, 300, 400, 500)); // it will return array of all the numbers passed as arguments except first two values
+
+// 100 and 200 are assigned to val1 and val2 respectively and rest of the values are assigned to prices array
+
+/*************************************************** */
+
+
+
+const user2 = {
+    username: "Piyush",
+    price: 999,
+    courseInstructor: "Piyush Sharma"
+};
+
+function handleObject(anyobject) {
+    return `Hello ${anyobject.username} you price is ${anyobject.price} and your courseInstructor is ${anyobject.courseInstructor}`
+};
+
+console.log(handleObject(user2)); // it will print the object properties in the string format
+//Output: Hello Piyush you price is 999 and your courseInstructor is Piyush Sharma
+
+// We can also pass object directly to the function without storing it in a variable
+handleObject({
+    username: "Akshay",
+    pricce: 700,
+    courseInstructor: "Akshay Kumar"
+});
+
+console.log(handleObject(user2));
 
 /*************************************************** */
