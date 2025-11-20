@@ -1,3 +1,45 @@
+const newCourse = {
+    coursename: "JavaScript the complete guide",
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const course = {
     title: "JavaScript - The Complete Guide",
     lessons: 100,
