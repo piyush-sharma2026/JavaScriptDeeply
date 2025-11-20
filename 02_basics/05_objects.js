@@ -1,7 +1,54 @@
 const newCourse = {
     coursename: "JavaScript the complete guide",
-
+    Lessons: 100,
+    Creator: "Piyush",
+    price: " 999",
+    courseInstructor: "Piyush Sharma"
 }
+
+// accessing object properties
+// course.courseInstructor
+
+
+// Destructuring Objects
+const { courseInstructor } = course;
+console.log(courseInstructor);
+
+// another way to access object properties
+console.log(newCourse['coursename']); // this method is called bracket notation
+console.log(courseInstructor); // this method is called dot notation
+console.log(newCourse.Lessons);// this method is called dot notation
+
+
+/******************************************************************************************* */
+
+// JSON (JavaScript Object Notation)
+// JSON is a syntax for storing and exchanging data.
+// JSON is text, written with JavaScript object notation.
+// JSON is language independent data format.
+// JSON is "self-describing" and easy to understand.
+
+//JSON EXAMPLES:--
+
+// {
+//      "name": "Piyush",
+//      "age": 21,
+//      "hobbies": ["coding", "reading", "gaming"],
+//      "isAdult": true,
+// }
+
+// JSON IN ARRAY:--
+/*[
+    {},
+    {},
+
+]
+    */
+
+
+
+
+
 
 
 
