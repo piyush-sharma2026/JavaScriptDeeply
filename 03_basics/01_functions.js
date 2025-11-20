@@ -79,6 +79,8 @@ console.log(loginUserMessage("Piyush")); // it wil print the "Piyush just logged
 
 //FUNCTION WITH OBJECT AND ARRAY IN JAVASCRIPT
 
+// FUNCTION IN OBJECTS
+
 
 function calculateCartPrice(...num1) { //rest operator or spead operator
     return num1;
@@ -124,3 +126,17 @@ handleObject({
 console.log(handleObject(user2));
 
 /*************************************************** */
+
+// FUNCTION IN ARRAY
+
+const myArray = [200, 400, 600, 100];
+function returnSecondValue(getArray) {
+    return getArray[0];
+}
+
+console.log(returnSecondValue(myArray)); // it will return 200
+console.log(returnSecondValue([200, 400, 600, 100])); // it will also return 200
+
+/*************************************************** */
+
+
