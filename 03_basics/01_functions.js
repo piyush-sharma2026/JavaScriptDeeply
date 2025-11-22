@@ -139,4 +139,11 @@ console.log(returnSecondValue([200, 400, 600, 100])); // it will also return 200
 
 /*************************************************** */
 
+addOne(6); // it will return 7
+console.log(addOne(6)); // it will print 7
+function addOne(num) {
+    return num + 1;
+}
+// addOne(6); // it will return 7
+// console.log(addOne(6)); // it will print 7
 
