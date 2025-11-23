@@ -78,3 +78,6 @@ console.log(userbooks);
 const userbooks2 = books.filter((bk) => { return bk.publish >= 1940 });
 console.log(userbooks2);
 
+const userbookkk = books.filter((bk) => bk.title === 'Book Nine');
+console.log(userbookkk);
+
