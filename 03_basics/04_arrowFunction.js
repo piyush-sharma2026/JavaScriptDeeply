@@ -55,16 +55,39 @@ const addTwoNum = (num1, num2) => {
 console.log(addTwoNum(5, 10)); // Output will be 15
 */
 
-// iMPLICIT RETURN
+// IMPLICIT RETURN
 
 const addTwoNum = (num1, num2) => num1 + num2; // no need to write return and can be done in a single line
 
-// if (num1+num2) will be in brackets then return should be used
-// and if num1+num2 is not in brackets then no need to write return
+// Emplicit return
+const addTwoNumber = (num1, num2) => num1 + num2; // if there is only one line of code then we can remove the curly braces and return keyword
+console.log(addTwo(5, 10));
+
+/*
+ You can write this in this format also....(Emplicit return)
+
+const addTwoNumber = (num1, num2)=> (num1 + num2); // if there is only one line of code then we can remove the curly braces and return keyword
+console.log(addTwo(5, 10));
+
+*/
+
+const nameofEmployee = (empname) => ("Employee name is " + empname); // if there is only one line of code then we can remove the curly braces and return keyword
+console.log(nameofEmployee("Sakshi"));
 
 // EXPLICIT RETURN
 
 const addTwoNums = (num1, num2) => ({ username: "Hitesh" });
+
+//Explicit return
+
+const addTwo = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(addTwo(5, 10));
+
+// Emplicit return
+const addTwoNumbers = (num1, num2) => num1 + num2; // if there is only one line of code then we can remove the curly braces and return keyword
+console.log(addTwo(5, 10));
 
 /***************************************************************/
 
