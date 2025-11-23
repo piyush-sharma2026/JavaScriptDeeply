@@ -21,3 +21,10 @@ if (true) {
     }
     //   console.log(name); // Error: name is not defined
 }
+
+//console.log(usename); // Error: username is not defined
+//console.log(age); // Error: age is not defined
+//console.log(name); // Error: name is not defined
+
+/***************************INTERESTING THINGS******************************* */
+
