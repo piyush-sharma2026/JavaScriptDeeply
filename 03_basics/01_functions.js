@@ -147,3 +147,10 @@ function addOne(num) {
 // addOne(6); // it will return 7
 // console.log(addOne(6)); // it will print 7
 
+
+addTwo(5) // it will through error because function is store in a variable and variable hoisting is not possible
+console.log(addTwo(5)) // it will through error because function is store in a variable and variable hoisting is not possible
+const addTwo = function (num) {
+    return num + 2;
+}
+
