@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #414141;">
+    <ul id="images">
+        <li><img width="150px" id="Butterfly"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiS5QBcKIALHvBTTbbgsFa96O1U_nrLDm8EQi1zOzxcL2IVjsucTFXtP6E6_7KpmgAKz58VOvFXQJiS0AiUY0YzI3yPMjn7zLR8Cgpxw&s=10"
+                alt=""></li>
+        <li><img width="150px" id="House"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH5neiCCWJeR2uJXhzexO8nPrHI4JdgKih5A&s"
+                alt=""></li>
+        <li><img width="150px" id="Jungle"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0ZUOsV0lZVPukaYt87EvOZi8XFvUiEuVQQ&s"
+                alt=""></li>
+        <li><img width="150px" id="Waterfall"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaWpJEepuqLpTFURhVIa7wJXfBlV0OKoCWA&s"
+                alt="" onclick="alert('Waterfall is beautiful')"></li> <!-- Alert on cliking on waterfall-->
+        <li><img width="150px" id="Sheep"
+                src="https://assets.farmsanctuary.org/content/uploads/2025/05/15062015/2024_04-19_FSNY_Margaretta_lamb_LH_4565-1600x1065.jpg"
+                alt=""></li>
+        <li><img width="150px" id="Girl"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Young_girl_smiling_in_sunshine_%282%29.jpg/960px-Young_girl_smiling_in_sunshine_%282%29.jpg"
+                alt=""></li>
+        <li><a style="color:rgb(16, 102, 73)" href="https://www.google.com/" id="google">Google</a></li>
+    </ul>
+
+</body>
+<script>
+    /* document.getElementById('Waterfall').onclick = function () {
+         alert("Waterfall looks beautiful"); // onclick event in javaScript
+ 
+     }
+    */
+
+    document.getElementById('House').addEventListener('click', function () {
+        alert("We live in house");
+    }, false); // We can write false or it is not neccessary
+
+    /********************************************************************************/
+
+    document.getElementById('Sheep').addEventListener('click', function (e) {
+        console.log(e);
+    }, false); // false is default
+
+    /* What to study? */
+    //Type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    document.getElementById('Jungle').addEventListener('click', function (e) {
+        console.log("Jungle is very far from my home");
+    }, false);
+
+    document.getElementById('Butterfly').addEventListener('click', function (e) {
+        console.log("Butter flew away");
+    }, true);
+
+    document.getElementById('images').addEventListener('click', function (e) {
+        console.log("Clicked inside the url");
+    }, true);
+
+    document.querySelector('#Girl').addEventListener('click', function (e) {
+        console.log("The smile of this beautiful girl is pretty");
+        e.stopPropagation();
+
+    }, true);
+
+    // If you are putting false value then it is know as bubbling
+    //If in place of false we put true then it is known as capturing top to down
+
+    document.getElementById('google').addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropogation();
+        console.log("Google Clicked");
+    }, false)
+
+</script>
+
+</html>
