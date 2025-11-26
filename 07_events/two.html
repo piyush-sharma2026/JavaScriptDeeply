@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h1>Indian People are very helpful</h1>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+    setTimeout(function () {
+        console.log("Piyush Kumar");
+    }, 5000); // It will take 5 second to print "Piyush Kumar"
+
+
+    // We can give reference
+    /*
+    
+    const sayPiyushKumar = function(){
+        console.log("Piyush Kumar")
+    }
+        setTimeout(sayPiyushKumar, 5000);
+    
+    */
+
+    const changeText = function () {
+        document.querySelector('h1').
+            innerHTML = " America kya kahta tha..."
+
+    }
+    setTimeout(changeText, 5000);
+
+    // If want to stop timeout we can pass reference to clearTimeout()
+
+
+    const stopMe = setTimeout(changeText, 5000);
+    //clearTimout()
+    //clearTimeout(stopMe); 
+
+
+    // We can do it using eventListner and it is best way to do it
+    document.querySelector('#Stop').addEventListener('click', function () {
+        clearTimeout(stopMe);
+        console.log("Stopped");
+    })
+
+</script>
+
+</html>
