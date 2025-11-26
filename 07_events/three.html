@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h1>Indian People are very helpful</h1>
+    <button id="Stop">Stop</button>
+    <button id="Start">Start</button>
+</body>
+<script>
+
+    // setInterval and clearInterval
+    const hello = setInterval(function () {
+        console.log("Vipul", 5000);
+    })
+
+    clearInterval(hello, 5000);
+
+    //*****************************************
+
+    const sayDate = function (str) {
+        console.log(str, Date.now);
+    }
+
+    const intervalId = setInterval(sayDate, 2000, "Hey");
+    clearInterval(intervalId);
+
+    //******************************************
+
+
+
+
+
+
+</script>
+
+</html>
