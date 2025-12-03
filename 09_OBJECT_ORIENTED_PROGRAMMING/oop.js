@@ -27,9 +27,15 @@ function User(username, loginCount, isLoggedIn) {
     this.loggedIn = isLoggedIn;
 
     return this;
+    // write return or not its not an issue
 }
-//new 
+//new (constructor gives us a new instance)
 const userOne = new User("Hitesh", 12, true);
 const userTwo = new User("Piyush", 24, false);
 console.log(userOne);
+//if we will not write new keyword it will override
+// In place of userOne userTwo will be printed
+
+
+/***************************************************************** */
 
