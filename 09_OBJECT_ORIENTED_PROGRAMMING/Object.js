@@ -29,3 +29,6 @@ const tea = new createUser("Tea", 250);
 
 chai.printMe(); // Score is 25
 tea.printMe(); // Score is 250
+chai.increment();
+chai.printMe(); // Score is 26
+

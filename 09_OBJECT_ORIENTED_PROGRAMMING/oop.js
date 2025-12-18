@@ -24,7 +24,7 @@ console.log(this); //{} output will be empty parenthesis
 function User(username, loginCount, isLoggedIn) {
     this.username = username;
     this.loginCount = loginCount;
-    this.loggedIn = isLoggedIn;
+    this.isloggedIn = isLoggedIn;
 
     return this;
     // write return or not its not an issue
